@@ -153,17 +153,13 @@
     color: #ffffff;
 }
 
-
 .footer .contacts {
+    
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    
     text-decoration: none;
 }
 .geo-address {
     color: #ffffff;
-    font size: 14px;
-    line height: 1.46;
 }
