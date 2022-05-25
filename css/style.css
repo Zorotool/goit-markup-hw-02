@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -8,6 +18,7 @@
     background-color: #ffffff;
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
+    margin: 0;
 }
 /* Заголовки секций */
 .section-title {
@@ -26,6 +37,13 @@
     color: var(--primary-text-color);
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    outline: 2px solid tomato;
+}
+
 .logo {
     color: var(--title-text-color);
     font-family: Raleway, cursive;
@@ -41,6 +59,8 @@
 }
 
 .list {
+    padding: 0px;
+    margin: 0px;
     list-style: none;
 }
 
@@ -72,16 +92,25 @@
 .hero {
     background: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
     }
 
-.hero .hero-title {
+.hero-title {
     font-size: 44px;
     font-weight: 900;
     color: #ffffff;
     line-height: 1.36;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    outline: 2px solid tomato;
     }
 
 .hero-button {
+    /* margin: 30px 700px 200px 700px; */
+    border: none;
+    border-radius: 4px;
+    /* padding: 10px 32px; */
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
@@ -115,6 +144,9 @@
 }
 
 .button {
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
     color: #212121;
     font-size: 16px;
     font-weight: 500;
